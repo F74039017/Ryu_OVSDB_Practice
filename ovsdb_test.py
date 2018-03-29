@@ -39,7 +39,7 @@ import netifaces as ni
 Pratice QoS with OVSDB
 
 This app works with SimpleSwitch13, which use L2 switch forwarding logic.
-Only 'udp' traffic can be programmed and push to specific queue accroding to 'dst_ip' and 'dst_port' currently.
+Only 'udp' traffic can be programmed and pushed to specific queue accroding to 'dst_ip' and 'dst_port' currently.
 This app uses only one qos record in ovsdb, and qos column of all ports will reference to this qos record.
 With rpc.py, we can create or modify ovsdb queues. All created queues will be bound to the qos.
 
@@ -56,7 +56,7 @@ Experiment:
     3. Start rpc.py
         $ python rpc.py <controller ip>
 
-    4. Use rpc.py configure queue in ovsdb
+    4. Use rpc.py to configure queue in ovsdb
         Command> 1 10.0.0.2 5001 3000000
         Command> 2 10.0.0.2 5002 7000000
 
